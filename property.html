@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details • GyaanXpress</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="property">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">GyaanXpress</a>
+        <div class="nav-links">
+          <a href="listings.html">Listings</a>
+          <a href="emergency.html">Emergency Stay</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="btn-outline">Login / Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page property-detail" data-property-detail>
+      <section class="page-header">
+        <div>
+          <h1 data-property-name>Property Name</h1>
+          <p data-property-location>Location</p>
+        </div>
+        <span class="badge verified">✔ Team Verified Listing</span>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery-main">
+          <img data-gallery-main src="" alt="Property" />
+          <div class="gallery-controls">
+            <button type="button" data-gallery-prev>Prev</button>
+            <button type="button" data-gallery-next>Next</button>
+          </div>
+        </div>
+        <div class="gallery-thumbs" data-gallery-thumbs></div>
+      </section>
+
+      <section class="property-info">
+        <div>
+          <h2>About this space</h2>
+          <p data-property-description></p>
+          <h3>Amenities</h3>
+          <ul data-property-amenities></ul>
+        </div>
+        <aside class="property-sidebar">
+          <div class="price-card">
+            <h3>Monthly Rent</h3>
+            <p class="price" data-property-price></p>
+            <p class="emergency" data-property-emergency></p>
+            <div class="badge-group">
+              <span class="badge">✔ Listed by GyaanXpress Team</span>
+              <span class="badge">✔ Physical Verification Completed</span>
+            </div>
+          </div>
+          <div class="owner-card">
+            <h3>Owner Contact</h3>
+            <p data-owner-name></p>
+            <p data-owner-phone></p>
+            <a class="btn-primary" data-owner-whatsapp href="#">WhatsApp Owner</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="media">
+        <div>
+          <h2>Video Tour</h2>
+          <div class="video" data-property-video></div>
+        </div>
+        <div>
+          <h2>360° View</h2>
+          <div class="iframe-placeholder">360° view iframe placeholder</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>GyaanXpress</h3>
+        <p>Verified Student Housing — Direct Owner Contact.</p>
+      </div>
+      <div class="footer-links">
+        <a href="listings.html">Listings</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
