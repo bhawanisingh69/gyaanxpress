@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listings • GyaanXpress</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="listings">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">GyaanXpress</a>
+        <div class="nav-links">
+          <a href="listings.html" class="active">Listings</a>
+          <a href="emergency.html">Emergency Stay</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="btn-outline">Login / Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="page-header">
+        <div>
+          <h1>Verified Listings</h1>
+          <p>Smart filters update instantly using dummy data.</p>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filter-group">
+          <label for="filter-type">Property Type</label>
+          <select id="filter-type">
+            <option value="all">All</option>
+            <option value="PG">PG</option>
+            <option value="Hostel">Hostel</option>
+            <option value="Library">Library</option>
+            <option value="Gym">Gym</option>
+            <option value="Mess">Mess</option>
+            <option value="1BHK">1BHK</option>
+            <option value="2BHK">2BHK</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-city">City / Area</label>
+          <select id="filter-city">
+            <option value="all">All</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Lucknow">Lucknow</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-budget">Budget Range</label>
+          <input id="filter-budget" type="range" min="2000" max="20000" value="12000" />
+          <span class="range-value" id="budget-value">Up to ₹12,000</span>
+        </div>
+        <div class="filter-group">
+          <label for="filter-availability">Availability</label>
+          <select id="filter-availability">
+            <option value="all">All</option>
+            <option value="Available Now">Available Now</option>
+            <option value="Next Week">Next Week</option>
+            <option value="Next Month">Next Month</option>
+          </select>
+        </div>
+        <div class="filter-group toggle">
+          <label for="filter-emergency">Emergency Stay</label>
+          <input id="filter-emergency" type="checkbox" />
+        </div>
+      </section>
+
+      <section class="cards-grid" data-listings-grid></section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>GyaanXpress</h3>
+        <p>Verified Student Housing — Direct Owner Contact.</p>
+      </div>
+      <div class="footer-links">
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Team Dashboard</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

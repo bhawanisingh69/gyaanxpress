@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Dashboard • GyaanXpress</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">GyaanXpress</a>
+        <div class="nav-links">
+          <a href="listings.html">Listings</a>
+          <a href="emergency.html">Emergency Stay</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="btn-outline">Login / Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page dashboard">
+      <section class="page-header">
+        <div>
+          <h1>Admin Panel</h1>
+          <p>Manage verified listings, emergency stays, and student requests.</p>
+        </div>
+        <button class="btn-primary" type="button">+ Add New Listing</button>
+      </section>
+
+      <div class="dashboard-layout">
+        <aside class="dashboard-sidebar">
+          <h2>Admin Tools</h2>
+          <nav class="dashboard-nav">
+            <a class="active" href="#">Overview</a>
+            <a href="#">Listings</a>
+            <a href="#">Emergency Stays</a>
+            <a href="#">Verification Queue</a>
+            <a href="#">Help Requests</a>
+            <a href="#">Owner Contacts</a>
+            <a href="#">Settings</a>
+          </nav>
+          <div class="sidebar-card">
+            <h3>Team Verification</h3>
+            <p>All listings must pass physical verification before publishing.</p>
+          </div>
+        </aside>
+
+        <section class="dashboard-content">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <p>Active Listings</p>
+              <h3>128</h3>
+              <span class="badge verified">+12 this week</span>
+            </div>
+            <div class="stat-card">
+              <p>Emergency Stays</p>
+              <h3>34</h3>
+              <span class="badge emergency">15 available now</span>
+            </div>
+            <div class="stat-card">
+              <p>New Help Requests</p>
+              <h3>52</h3>
+              <span class="badge">Respond within 2 hrs</span>
+            </div>
+            <div class="stat-card">
+              <p>Pending Verifications</p>
+              <h3>9</h3>
+              <span class="badge">Scheduled visits</span>
+            </div>
+          </div>
+
+          <div class="panel-grid">
+            <section class="panel-card">
+              <h2>Verification Queue</h2>
+              <ul class="list">
+                <li>Blue Haven PG • Delhi • Visit at 5 PM</li>
+                <li>Skyline Hostel • Noida • Photos pending</li>
+                <li>Green Nest 2BHK • Delhi • Owner documents</li>
+              </ul>
+            </section>
+            <section class="panel-card">
+              <h2>Recent Help Requests</h2>
+              <ul class="list">
+                <li>Ananya • Pune • ₹10,000 • PG</li>
+                <li>Vikas • Bangalore • ₹14,000 • 1BHK</li>
+                <li>Simran • Delhi • Emergency stay</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="panel-card">
+            <h2>Add Property</h2>
+            <form>
+              <div class="form-grid">
+                <label>
+                  Title
+                  <input type="text" placeholder="Property title" />
+                </label>
+                <label>
+                  Price
+                  <input type="text" placeholder="Monthly price" />
+                </label>
+                <label>
+                  Location
+                  <input type="text" placeholder="City / Area" />
+                </label>
+                <label>
+                  Category
+                  <select>
+                    <option>PG</option>
+                    <option>Hostel</option>
+                    <option>Library</option>
+                    <option>Gym</option>
+                    <option>Mess</option>
+                    <option>1BHK</option>
+                    <option>2BHK</option>
+                  </select>
+                </label>
+                <label>
+                  Upload Images
+                  <input type="file" multiple />
+                </label>
+                <label>
+                  YouTube Link
+                  <input type="text" placeholder="https://youtube.com/" />
+                </label>
+              </div>
+              <label>
+                Description
+                <textarea rows="4" placeholder="Property description"></textarea>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" />
+                Emergency stay available
+              </label>
+              <button class="btn-primary" type="button">Save Listing</button>
+            </form>
+          </section>
+
+          <section class="panel-card">
+            <h2>Listing Activity</h2>
+            <div class="table">
+              <div class="table-row header">
+                <span>Property</span>
+                <span>City</span>
+                <span>Status</span>
+                <span>Owner Contact</span>
+              </div>
+              <div class="table-row">
+                <span>Blue Haven PG</span>
+                <span>Delhi</span>
+                <span class="status verified">Verified</span>
+                <span>+91 91234 56789</span>
+              </div>
+              <div class="table-row">
+                <span>Skyline Hostel</span>
+                <span>Noida</span>
+                <span class="status pending">Pending</span>
+                <span>+91 99887 66554</span>
+              </div>
+              <div class="table-row">
+                <span>Blue Ridge 1BHK</span>
+                <span>Pune</span>
+                <span class="status verified">Verified</span>
+                <span>+91 98888 33221</span>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>GyaanXpress</h3>
+        <p>Verified Student Housing — Direct Owner Contact.</p>
+      </div>
+      <div class="footer-links">
+        <a href="listings.html">Listings</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

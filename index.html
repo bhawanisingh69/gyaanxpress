@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GyaanXpress • Verified Student Housing</title>
+    <meta
+      name="description"
+      content="GyaanXpress is a student-only verified housing platform in India with PGs, hostels, rooms, libraries, gyms, and emergency stays listed directly by the team."
+    />
+    <meta property="og:title" content="GyaanXpress • Verified Student Housing" />
+    <meta
+      property="og:description"
+      content="Find verified PGs, hostels, rooms, libraries, gyms, and emergency stays with direct owner contact."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="index.html">GyaanXpress</a>
+        <div class="nav-links">
+          <a href="listings.html">Listings</a>
+          <a href="emergency.html">Emergency Stay</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="btn-outline">Login / Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <span class="pill">Verified Student Housing — Direct Owner Contact.</span>
+          <h1>Find trusted PGs, hostels, rooms &amp; more in India.</h1>
+          <p>
+            GyaanXpress is a student-only verified housing platform where every listing is
+            curated by our team. No brokers. Just safe, affordable stays.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="listings.html">Explore Listings</a>
+            <a class="btn-secondary" href="emergency.html">Emergency Stay</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Hero Search</h3>
+          <p>Search across verified PGs, hostels, rooms, libraries, gyms &amp; mess.</p>
+          <form class="hero-search">
+            <input type="text" placeholder="City or area" />
+            <select>
+              <option>Property Type</option>
+              <option>PG</option>
+              <option>Hostel</option>
+              <option>Library</option>
+              <option>Gym</option>
+              <option>Mess</option>
+              <option>1BHK</option>
+              <option>2BHK</option>
+            </select>
+            <button class="btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="section-heading">
+          <h2>Property Categories</h2>
+          <p>Choose from student-first spaces curated by GyaanXpress.</p>
+        </div>
+        <div class="category-grid">
+          <div class="category-card">PG</div>
+          <div class="category-card">Hostel</div>
+          <div class="category-card">Library</div>
+          <div class="category-card">Gym</div>
+          <div class="category-card">Mess</div>
+          <div class="category-card">1BHK</div>
+          <div class="category-card">2BHK</div>
+        </div>
+      </section>
+
+      <section class="section" id="featured">
+        <div class="section-heading">
+          <h2>Featured Listings</h2>
+          <p>Handpicked spaces with verified owners and transparent pricing.</p>
+        </div>
+        <div class="cards-grid" data-featured-listings></div>
+      </section>
+
+      <section class="section emergency-banner">
+        <div>
+          <h2>Emergency Stay (1–2 Days)</h2>
+          <p>
+            Need a safe, low-cost stay tonight? Explore our emergency listings with direct
+            owner contact and team verification.
+          </p>
+        </div>
+        <a class="btn-primary" href="emergency.html">View Emergency Stays</a>
+      </section>
+
+      <section class="section trust">
+        <div class="section-heading">
+          <h2>Team Verification System</h2>
+          <p>
+            Our team personally visits properties before listing to ensure student safety
+            and trust.
+          </p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>✔ Listed by GyaanXpress Team</h3>
+            <p>Only team-listed properties appear on the platform.</p>
+          </div>
+          <div class="trust-card">
+            <h3>✔ Physical Verification Completed</h3>
+            <p>Every property is inspected for hygiene, security, and student comfort.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>GyaanXpress</h3>
+        <p>Verified Student Housing — Direct Owner Contact.</p>
+      </div>
+      <div class="footer-links">
+        <a href="listings.html">Listings</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Team Dashboard</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
